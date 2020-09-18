@@ -18,15 +18,20 @@ public class CalculadoraTest {
     @BeforeTest
     public static void setupEnvironment(){
         options = new DesktopOptions();
+        //path de app a ejecutar
         options.setApplicationPath("C:\\Windows\\System32\\calc.exe");
+        //path de Winium.Desktop.Driver.exe
         File driverPath = new File("src\\main\\resources\\driver\\Winium.Desktop.Driver.exe");
+        //configuración de la ejecución
         service = new WiniumDriverService.Builder().usingDriverExecutable(driverPath).usingPort(9999).withVerbose(true).withSilent(false).buildDesktopService();
         try {
+            //levantar servicio
             service.start();
         } catch (IOException e) {
             System.out.println("Exception while starting WINIUM service");
             e.printStackTrace();
         }
+        //se pasan como parametros las configuraciones de la ejecución y el path de la app
         driver = new WiniumDriver(service,options);
     }
 
@@ -49,6 +54,7 @@ public class CalculadoraTest {
     }
 
     @AfterTest
+    //bajar servicio
     public void tearDown(){
         service.stop();
     }

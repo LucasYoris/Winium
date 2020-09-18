@@ -9,12 +9,6 @@
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>com.github.2gis.winium</groupId>
             <artifactId>winium-webdriver</artifactId>
             <version>0.1.0-1</version>
@@ -23,12 +17,6 @@
             <groupId>com.github.2gis.winium</groupId>
             <artifactId>winium-elements-desktop</artifactId>
             <version>0.2.0-1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.14.3</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
