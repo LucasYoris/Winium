@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="WiniumTests" verbose="10">
+    <test name="WiniumTest" preserve-order="true">
+        <classes>
+            <class name="CalculadoraTest"></class>
+        </classes>
+    </test>
+</suite>
